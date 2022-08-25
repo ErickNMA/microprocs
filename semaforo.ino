@@ -17,7 +17,7 @@ void setup()
     digitalWrite(LED_GREEN, LOW);
 }
 
-int mode=0;
+unsigned long mode=0;
 
 int td = 200;
 unsigned long t=0;
@@ -44,7 +44,7 @@ void loop()
         break;
     }
 
-    if(((millis() - t) >= td) && (digitalRead(BUTTON) == HIGH))
+    if(((millis() - t) >= td) && digitalRead(BUTTON))
     {
         t = millis();
         mode++;
