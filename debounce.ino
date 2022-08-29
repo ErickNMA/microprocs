@@ -3,7 +3,7 @@ class Button
     private:
         const p;
         short deb_time = 100;
-        long t;
+        unsigned long t;
 
     public:
         Button(const pin)
