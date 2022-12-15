@@ -1,5 +1,6 @@
 #include <Arduino.h>
-#include <RF24.h>
+ 
+ #include <RF24.h>
 
 RF24 radio(9, 10);
 byte enderecos[][6] = {"1node", "2node"};
@@ -34,6 +35,7 @@ void loop()
   if(radio.available())
   {
     radio.read(&target, 10*sizeof(int));
+    Serial.println("ENTROU!");
   }
 
   if(target[1] != 0)
