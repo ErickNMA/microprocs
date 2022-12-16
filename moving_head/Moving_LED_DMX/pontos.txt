@@ -1,0 +1,29 @@
+=> Geral:
+
+* Circuito de isolamento e acoplamento;
+
+* Peças eletrogate;
+
+* Comunicação serial: variáveis concatenadas: "addr, pan, tilt, vel, acel, smothn, dim, str, r, g, b";
+
+* O moving deve retornar um sinal da situação atual dele: 'moving', 'ready', etc...
+
+
+
+
+
+=> Controller:
+
+* Modo moving -> pan, tilt, velocidade, aceleração, smoothness;
+
+* Modo lightning -> dimmer, strobo, red, green, blue;
+
+
+
+
+
+=> Moving:
+
+* Plaquinha matriz: 150 X 150 mm;
+
+* Corrente máx.: 5A;
